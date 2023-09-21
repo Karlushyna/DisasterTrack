@@ -12,6 +12,7 @@
     "@iconify-icons/openmoji": "^1.2.28",
     "@iconify-icons/wi": "^1.2.3",
     "@iconify/icons-mdi": "^1.2.47",
+    "@iconify/react": "^4.1.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
