@@ -39,7 +39,7 @@ const LocationInfoBox = ({ info, setOpenInfoBox }) => {
 					LONGITUDE: <span className="location-box-info">{longitude}</span>
 				</li>
 			</ul>
-			<a href={info.learn} target="_blank" rel="noreferrer">
+			<a className="link-more" href={info.learn} target="_blank" rel="noreferrer">
 				Find out more
 			</a>
 		</div>

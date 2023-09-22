@@ -33,7 +33,7 @@ const DisasterSelector = ({ handleSelectClick }) => {
 			<button className="disaster-button minimize-btn" onClick={handleMinimize}>
 				{minButtonChar}
 			</button>
-			<h3>Filter by</h3>
+			<h3 className="filter">Filter by</h3>
 			{/* Button for all disasters, sets typesArr to ["all"] */}
 			<button
 				className="disaster-button"

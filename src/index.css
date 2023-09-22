@@ -1,16 +1,17 @@
-@font-face {
-  font-family: "Nasa";
-  src: url("./assets/fonts/Nasa.woff2") format("woff2"),
-    url("./assets/fonts/Nasa.woff") format("woff"),
-    url("./assets/fonts/Nasa.ttf") format("ttf");
+/* @font-face { */
+  /* font-family: "Lexend";
+  src: url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap');
+    
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 body {
   margin: 0;
-  font-family: "Nasa", Helvetica, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  /* text-transform: uppercase; */
   overflow: hidden;
 }
 /* HEADER */
@@ -50,6 +51,10 @@ body {
 
 .header a:hover {
   color: #ccd3de;
+}
+
+.main-title {
+  text-transform: uppercase;
 }
 
 /* MAP  */
@@ -122,15 +127,15 @@ body {
 }
 
 .location-info span {
-  color: yellow;
+  color: #e8eff3;
 }
 
 .location-info a {
   display: flex;
   text-decoration: none;
-  color: yellow;
+  color: #e8eff3;
   cursor: pointer;
-  border: 2px solid yellow;
+  border: 2px solid #e8eff3;
   margin: 0 auto;
   transition: all 0.3s ease-in; 
   justify-content: center;
@@ -141,8 +146,8 @@ body {
 }
 
 .location-info a:hover {
-  color: #0967f5;
-  border-color: #0967f5;
+  color: #dcf8a2;
+  border-color: #dcf8a2;
 }
 
 .location-info .close-icon {
@@ -151,12 +156,12 @@ body {
   right: 20px;
   font-size: 1.5rem;
   cursor: pointer;
-  color: yellow;
+  color: #e8eff3;
   transition: all 0.3s ease-in;
 }
 
 .location-info .close-icon:hover {
-  color: #0967f5;
+  color:#e8eff3;
 }
 
 /* LOCATION HOVER INFO */
@@ -226,12 +231,14 @@ body {
 .disaster-button {
   font-family: inherit;
   background-color: transparent;
-  color: yellow;
+  color: #e8eff3;
   cursor: pointer;
-  width: 200px;
+  width: 250px;
   height: 32px;
   font-size: 16px;
-  border: 2px solid yellow;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid #e8eff3;
   margin: 10px 10px 0;
   position: relative;
   transition: color 0.3s, border-color 0.3s;
@@ -239,14 +246,14 @@ body {
 }
 
 .disaster-button:hover {
-  color: #0967f5;
-  border-color: #0967f5;
+  color: #d8f7b4;
+  border-color: #d8f7b4;
 }
 
 .disaster-button:focus {
   outline: none;
-  color: #0967f5;
-  border-color: #0967f5;
+  color: #d8f7b4;
+  border-color: #d8f7b4;
 }
 
 .disaster-button span {
@@ -331,17 +338,11 @@ body {
 .location-icon {
   font-size: 1.5rem;
   cursor: pointer;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
 }
 
 /* **********************IF NO ICONS *************************** */
-/* .location-icon {
-  font-family: Helvetica, sans-serif;
-  font-weight: bolder;
-  font-size: 2rem;
-  cursor: pointer;
-  transform: translate(-50%, -50%);
-} */
+
 .location-icon.drought {
   color: tan;
 }
@@ -355,7 +356,7 @@ body {
   color: midnightblue;
 }
 .location-icon.storm {
-  color: yellow;
+  color: rgb(36, 33, 48);
 }
 .location-icon.volcano {
   color: maroon;
@@ -378,6 +379,10 @@ body {
 .location-icon:hover {
   color: #222;
   filter: brightness(2);
+}
+
+.filter {
+  text-transform: uppercase;
 }
 
 /* ANIMATIONS */
@@ -421,4 +426,8 @@ body {
   .location-info a {
     width: 150px;
   }
+}
+
+.link-more {
+  text-transform: uppercase;
 }
