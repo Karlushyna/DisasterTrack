@@ -1,6 +1,6 @@
 import React from "react";
 
-import spinner from "../assets/images/spinner.gif";
+import spinner from "../../assets/images/spinner.gif";
 
 const Loader = () => {
 	return (
